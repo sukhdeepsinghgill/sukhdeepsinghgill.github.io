@@ -232,6 +232,31 @@ a:hover .arrow.ne { transform: translate(3px, -3px); }
 .me { color: var(--star); font-weight: 600; }
 .paper .chips { padding-top: 4px; gap: 8px; }
 
+/* ---------- Papers with summaries and figures ---------- */
+[hidden] { display: none !important; }
+.filters { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+button.chip { background: transparent; font: inherit; font-size: 14px; cursor: pointer; }
+.chip[aria-pressed="true"] { border-color: var(--amber); color: var(--star); background: var(--panel-hi); }
+.paper.has-fig { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); column-gap: 32px; row-gap: 20px; align-items: start; }
+.paper.has-fig:hover { transform: none; }
+.paper .text { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.summary { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.summary p, .summary-line { font-size: 15.5px; line-height: 1.6; color: var(--dim); }
+.summary .lbl { color: var(--star); font-weight: 600; }
+.paper .fig { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.fig-frame { border: 1px solid var(--rule); border-radius: 12px; background: var(--panel); padding: 10px; overflow: hidden; }
+.fig-frame img, .fig-frame svg { display: block; width: 100%; height: auto; }
+.fig-frame.light { background: #fff; border-color: #fff; padding: 12px; }
+.paper .fig figcaption { font-size: 13.5px; line-height: 1.55; color: var(--dim); }
+.fig-kind { display: inline-block; margin-right: 8px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
+.nw { white-space: nowrap; }
+.ss { display: inline-flex; flex-direction: column; vertical-align: 0.32em; font-size: .68em; line-height: 1.05; margin-left: 1px; }
+.chart .pt { cursor: default; }
+.chart .pt:hover > circle:not(:last-child), .chart .pt:hover > path:not(:first-of-type) { stroke: #ECE7DC; }
+@media (max-width: 960px) { .paper.has-fig { grid-template-columns: 1fr; } }
+.fig-frame.scroll { overflow-x: auto; }
+@media (max-width: 600px) { .fig-frame.scroll .chart { min-width: 520px; } }
+
 /* ---------- Math ---------- */
 .math { font-family: var(--math); }
 .eq { overflow-x: auto; }

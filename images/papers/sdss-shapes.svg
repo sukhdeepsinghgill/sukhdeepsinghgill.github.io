@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title>Schematic of the paper's finding: across triangle shapes, SDSS galaxies are least non-Gaussian for equilateral triangles and most non-Gaussian for nearly linear triangles</title>
+<defs>
+<linearGradient id="ng" x1="70" y1="0" x2="330" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#8EC9F2" stop-opacity=".12"/>
+<stop offset=".55" stop-color="#F2B766" stop-opacity=".35"/>
+<stop offset="1" stop-color="#F2B766" stop-opacity=".9"/>
+</linearGradient>
+<marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ECE7DC"/></marker>
+</defs>
+<text x="20" y="24" font-size="11" letter-spacing="1.6" fill="#A9B2C6">SDSS GALAXIES · STRENGTH OF NON-GAUSSIANITY</text>
+<path d="M70 50L330 50L330 270L317 264.6L304 258.4L291 252.2L278 245.6L265 238.6L252 231.2L239 223.3L226 215L213 206.1L200 196.7L187 186.6L174 175.7L161 164.1L148 151.5L135 138L122 123.3L109 107.5L96 90L83 71.3Z" fill="url(#ng)" stroke="#3A4566" stroke-width="1.2"/>
+<circle cx="70" cy="50" r="5" fill="#ECE7DC"/>
+<circle cx="330" cy="50" r="5" fill="#ECE7DC"/>
+<circle cx="330" cy="270" r="5" fill="#ECE7DC"/>
+<text x="62" y="40" font-size="12.5" fill="#ECE7DC">Equilateral: weakest</text>
+<text x="340" y="54" font-size="12.5" fill="#ECE7DC">Squeezed</text>
+<text x="340" y="274" font-size="12.5" fill="#ECE7DC">Stretched</text>
+<text transform="translate(347 160) rotate(90)" font-size="11.5" fill="#F2B766" text-anchor="middle">nearly linear: strongest</text>
+<path d="M150 150L292 150" stroke="#ECE7DC" stroke-width="1.6" marker-end="url(#s1)"/>
+<text x="221" y="140" font-size="12" fill="#ECE7DC" text-anchor="middle">more non-Gaussian</text>
+<path d="M58 50V270M70 282H330" stroke="#3A4566" stroke-width="1.2"/>
+<g font-size="11.5" fill="#A9B2C6">
+<text x="52" y="54" text-anchor="end">1</text><text x="52" y="274" text-anchor="end">0.5</text>
+<text x="70" y="298" text-anchor="middle">0.5</text><text x="330" y="298" text-anchor="middle">1</text>
+</g>
+<text x="20" y="164" font-size="16" fill="#ECE7DC" font-style="italic" font-family="'STIX Two Text', Cambria, serif">t</text>
+<text x="200" y="304" font-size="16" fill="#ECE7DC" font-style="italic" text-anchor="middle" font-family="'STIX Two Text', Cambria, serif">μ</text>
+<g font-size="12" fill="#A9B2C6">
+<text x="370" y="112">SDSS DR17</text>
+<text x="370" y="128">main galaxy</text>
+<text x="370" y="144">sample,</text>
+<text x="370" y="160">z ≈ 0.09</text>
+<text x="370" y="192">Every triangle</text>
+<text x="370" y="208">size and shape</text>
+</g>
+<text x="466" y="314" font-size="10" fill="#6E7891" text-anchor="end">Schematic · qualitative</text>
+</svg>

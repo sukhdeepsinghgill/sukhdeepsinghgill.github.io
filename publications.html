@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Publications · Sukhdeep Singh Gill</title>
-<meta name="description" content="Peer-reviewed journal articles and collaboration papers by Sukhdeep Singh Gill.">
+<meta name="description" content="Peer-reviewed papers by Sukhdeep Singh Gill on the bispectrum of galaxies and the 21-cm signal, each with a short summary and a figure.">
 <meta name="author" content="Sukhdeep Singh Gill">
 <meta name="theme-color" content="#0A0F1C">
 <meta name="color-scheme" content="dark">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Publications · Sukhdeep Singh Gill">
-<meta property="og:description" content="Peer-reviewed journal articles and collaboration papers by Sukhdeep Singh Gill.">
+<meta property="og:description" content="Peer-reviewed papers by Sukhdeep Singh Gill on the bispectrum of galaxies and the 21-cm signal, each with a short summary and a figure.">
 <meta property="og:url" content="https://sukhdeepsinghgill.github.io/publications.html">
 <link rel="canonical" href="https://sukhdeepsinghgill.github.io/publications.html">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -41,16 +41,20 @@
 <div class="wrap">
 <p class="eyebrow rise">Publications</p>
 <h1 class="display rise d1">Papers</h1>
-<p class="intro-text rise d2">Nine peer-reviewed journal articles on the bispectrum of galaxies and of the 21-cm signal, plus two SKA Observatory collaboration papers, newest first. For citation counts and the latest list, see my research profiles.</p>
+<p class="intro-text rise d2">Nine peer-reviewed journal articles on the bispectrum of galaxies and of the 21-cm signal, plus two SKA Observatory collaboration papers, newest first. Each paper has a short summary of what it delivers and why it matters, next to a figure: a figure or plot from the paper's own data where one is available, and otherwise a schematic of the main idea.</p>
 <div class="actions rise d3">
 <a class="btn btn-solid" href="https://scholar.google.com/citations?user=yd1vCpYAAAAJ&amp;hl=en">Google Scholar <span class="arrow ne" aria-hidden="true">↗</span></a>
 <a class="btn btn-ghost" href="https://inspirehep.net/authors/2758668">INSPIRE-HEP <span class="arrow ne" aria-hidden="true">↗</span></a>
 </div>
-<ul class="key rise d4" aria-label="Topic key">
-<li><span class="dot amber"></span>Galaxy surveys</li>
-<li><span class="dot blue"></span>21-cm cosmology</li>
-<li><span class="dot"></span>Theory &amp; methods</li>
-</ul>
+<div class="filters rise d4">
+<div class="chips" role="group" aria-label="Show papers by topic">
+<button class="chip" type="button" data-filter="all" aria-pressed="true">All topics</button>
+<button class="chip" type="button" data-filter="galaxy" aria-pressed="false"><span class="dot amber"></span>Galaxy surveys</button>
+<button class="chip" type="button" data-filter="21cm" aria-pressed="false"><span class="dot blue"></span>21-cm cosmology</button>
+<button class="chip" type="button" data-filter="theory" aria-pressed="false"><span class="dot"></span>Theory &amp; methods</button>
+</div>
+<p class="small muted" id="filter-status" role="status" aria-live="polite">Showing all 11 papers.</p>
+</div>
 </div>
 </section>
 
@@ -60,12 +64,22 @@
 <div class="year-group reveal">
 <h2>2026</h2>
 <div class="papers">
-<article class="paper">
+<article class="paper has-fig" data-topic="21cm">
+<div class="text">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology</p>
 <h3><a href="https://doi.org/10.3847/1538-4357/ae66f4">The Epoch of Reionization 21 cm Bispectrum at <i>z</i> = 8.2 from MWA Data. II. Smooth Component Filtering</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Khandakar Md Asif Elahi, Somnath Bharadwaj, Shiv K. Sethi, Akash Kumar Patwa</p>
 <p class="venue">The Astrophysical Journal 1003, 189 (2026)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> Adds smooth component filtering (SCF) to our MWA analysis at <i>z</i> = 8.2. Filtering out the spectrally smooth foregrounds lowers the cylindrical bispectrum by three to four orders of magnitude and also removes the artefacts left by missing frequency channels. In the cleaner EoR window (<i>k</i><sub>⊥</sub> ≤ 0.026 Mpc<sup>−1</sup>, <i>k</i><sub>∥</sub> &gt; 0.135 Mpc<sup>−1</sup>), the tightest limits are −(1.25 × 10<sup>4</sup> mK)<sup>3</sup> ≤ Δ<sup>3</sup> ≤ (1.22 × 10<sup>4</sup> mK)<sup>3</sup> at <i>k</i><sub>1</sub> = 0.281 Mpc<sup>−1</sup>.</p>
+<p><span class="lbl">Why it matters.</span> What remains is consistent with thermal noise rather than foreground leakage. That changes the problem: longer observations should now tighten the limits directly.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2602.17304">arXiv:2602.17304 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/3121755">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#data">Data <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/scf-window.svg" width="480" height="320" loading="lazy" alt="Schematic of the k-perpendicular, k-parallel plane: a foreground wedge at large k-perpendicular and low k-parallel, a band below the filtering limit where the smooth component is removed, and a narrow EoR window at small k-perpendicular above it."></div>
+<figcaption><span class="fig-kind">Schematic</span>Filtering removes the smooth component at low <i>k</i><sub>∥</sub>. The measurement uses the clean window at small <i>k</i><sub>⊥</sub>, above the filtering limit.</figcaption>
+</figure>
 </article>
 </div>
 </div>
@@ -73,53 +87,260 @@
 <div class="year-group reveal">
 <h2>2025</h2>
 <div class="papers">
-<article class="paper">
+
+<article class="paper has-fig" data-topic="theory">
+<div class="text">
 <p class="tag"><span class="dot"></span>Theory &amp; methods</p>
 <h3><a href="https://doi.org/10.1017/pasa.2025.10078">Probing Gravity beyond General Relativity with Bispectrum Multipoles of Cosmological Tracers: I. Theoretical Foundations</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span></p>
 <p class="venue">Publications of the Astronomical Society of Australia 42, e116 (2025)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> Develops the theory for testing gravity with the full set of redshift-space bispectrum multipoles, <span class="nw"><i>B</i><span class="ss"><span>m</span><span>ℓ</span></span></span>, taking degenerate higher-order scalar-tensor (DHOST) theories as the alternative to general relativity. It maps how each multipole and each triangle shape responds to changes in the second-order growth of structure.</p>
+<p><span class="lbl">Why it matters.</span> The higher multipoles (ℓ = 2, 4, 6) are more sensitive than the monopole, acute triangles respond most, and several multipoles change sign when gravity departs from general relativity, a clear signature to look for. The ℓ = 6, m ≤ 4 multipoles are untouched by quadratic and tidal galaxy bias, which makes them especially robust probes.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2508.07990">arXiv:2508.07990 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2959087">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/gravity-multipoles.svg" width="480" height="360" loading="lazy" alt="Grid of bispectrum multipoles by l and m. The monopole is the baseline; l equals 2 and 4 are more sensitive but mixed with galaxy bias; l equals 6 with m up to 4 are sensitive and bias-free; l equals 6 with m of 5 or 6 carry no second-order growth information; all l equals 8 multipoles carry no independent gravity information."></div>
+<figcaption><span class="fig-kind">Schematic</span>The paper's conclusions at a glance: which multipoles carry the signal of modified gravity, and which are robust to galaxy bias.</figcaption>
+</figure>
 </article>
-<article class="paper">
+
+<article class="paper has-fig" data-topic="21cm">
+<div class="text">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology</p>
 <h3><a href="https://doi.org/10.3847/1538-4357/ae0463">The Epoch of Reionization 21 cm Bispectrum at <i>z</i> = 8.2 from MWA Data. I. Foregrounds and Preliminary Upper Limits</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Somnath Bharadwaj, Khandakar Md Asif Elahi, Shiv K. Sethi, Akash Kumar Patwa</p>
 <p class="venue">The Astrophysical Journal 993, 56 (2025)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> The first attempt to measure the 21-cm bispectrum of the Epoch of Reionization in real data, from MWA observations at 154.2 MHz (<i>z</i> = 8.2). Foregrounds form a wedge in the cylindrical bispectrum, as they do in the power spectrum, but its shape is more complex because it depends on all three sides of the triangle. Outside the wedge, the best 2σ upper limits are Δ<sup>3</sup> ≤ (1.81 × 10<sup>3</sup> mK)<sup>3</sup> for equilateral triangles at <i>k</i><sub>1</sub> = 0.008 Mpc<sup>−1</sup> and Δ<sup>3</sup> ≤ (2.04 × 10<sup>3</sup> mK)<sup>3</sup> for squeezed triangles at <i>k</i><sub>1</sub> = 0.012 Mpc<sup>−1</sup>.</p>
+<p><span class="lbl">Why it matters.</span> It establishes the method and identifies the obstacles later analyses must overcome: the more complex bispectrum wedge, and spikes caused by periodically missing frequency channels. The limits still sit about seven orders of magnitude in Δ<sup>3</sup> above the expected signal.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2507.04964">arXiv:2507.04964 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2943234">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#data">Data <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame scroll">
+<svg class="chart" viewBox="0 0 560 380" role="img" aria-labelledby="mwa1-title mwa1-desc" font-family="'IBM Plex Sans', system-ui, sans-serif">
+<title id="mwa1-title">MWA z = 8.2: upper limits on the 21-cm bispectrum</title>
+<desc id="mwa1-desc">Two-sigma upper limits on the cube-root bispectrum amplitude, in millikelvin, against triangle size k1 for equilateral and squeezed triangles. The best limit is 1.81 thousand millikelvin for equilateral triangles at k1 = 0.008 per megaparsec, about seven orders of magnitude in Delta cubed above the expected signal of about ten millikelvin.</desc>
+<defs><marker id="cap" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 5H10" stroke="#A9B2C6" stroke-width="2"/></marker></defs>
+<line x1="74" x2="448" y1="322.0" y2="322.0" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="326.0" text-anchor="end" font-size="12" fill="#A9B2C6">1</text>
+<line x1="74" x2="448" y1="278.9" y2="278.9" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="282.9" text-anchor="end" font-size="12" fill="#A9B2C6">10</text>
+<line x1="74" x2="448" y1="235.7" y2="235.7" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="239.7" text-anchor="end" font-size="12" fill="#A9B2C6">10²</text>
+<line x1="74" x2="448" y1="192.6" y2="192.6" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="196.6" text-anchor="end" font-size="12" fill="#A9B2C6">10³</text>
+<line x1="74" x2="448" y1="149.4" y2="149.4" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="153.4" text-anchor="end" font-size="12" fill="#A9B2C6">10⁴</text>
+<line x1="74" x2="448" y1="106.3" y2="106.3" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="110.3" text-anchor="end" font-size="12" fill="#A9B2C6">10⁵</text>
+<line x1="74" x2="448" y1="63.1" y2="63.1" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="67.1" text-anchor="end" font-size="12" fill="#A9B2C6">10⁶</text>
+<line x1="74" x2="448" y1="20.0" y2="20.0" stroke="#232C44" stroke-width="1"/>
+<text x="64" y="24.0" text-anchor="end" font-size="12" fill="#A9B2C6">10⁷</text>
+<line x1="133.2" x2="133.2" y1="20" y2="322" stroke="#232C44" stroke-width="1"/>
+<text x="133.2" y="342" text-anchor="middle" font-size="12" fill="#A9B2C6">0.01</text>
+<line x1="246.5" x2="246.5" y1="20" y2="322" stroke="#232C44" stroke-width="1"/>
+<text x="246.5" y="342" text-anchor="middle" font-size="12" fill="#A9B2C6">0.1</text>
+<line x1="359.8" x2="359.8" y1="20" y2="322" stroke="#232C44" stroke-width="1"/>
+<text x="359.8" y="342" text-anchor="middle" font-size="12" fill="#A9B2C6">1</text>
+<text x="261.0" y="368" text-anchor="middle" font-size="13" fill="#A9B2C6">Triangle size k₁ (Mpc⁻¹)</text>
+<text transform="translate(18 171.0) rotate(-90)" text-anchor="middle" font-size="13" fill="#A9B2C6">2σ upper limit on Δ (mK)</text>
+<line x1="74" x2="448" y1="278.9" y2="278.9" stroke="#ECE7DC" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="442" y="270.9" text-anchor="end" font-size="12" fill="#ECE7DC">Expected EoR signal, Δ ≈ 10 mK</text>
+<line x1="105.7" x2="105.7" y1="185.4" y2="274.9" stroke="#A9B2C6" stroke-width="1" marker-start="url(#cap)" marker-end="url(#cap)"/>
+<text x="113.7" y="234.1" font-size="11.5" fill="#A9B2C6">≈ 7 orders of magnitude in Δ³</text>
+<polyline points="102.6,175.3 121.7,181.4 140.7,138.8 159.8,129.1 178.8,117.4 197.9,106.9 216.9,98.6 236.0,89.6 255.1,91.5" fill="none" stroke="#BF7F22" stroke-width="2" stroke-opacity=".6" stroke-linejoin="round"/>
+<g class="pt"><title>Equilateral · k₁ = 0.00537 Mpc⁻¹ · Δ³ ≤ (2.52e+03 mK)³ · 3,426 triangles</title>
+<path d="M102.6 180.3V190.3M99.1 186.3L102.6 190.3L106.1 186.3" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="102.6" cy="175.3" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="102.6" cy="175.3" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0079 Mpc⁻¹ · Δ³ ≤ (1.81e+03 mK)³ · 2,376 triangles</title>
+<path d="M121.7 186.4V196.4M118.2 192.4L121.7 196.4L125.2 192.4" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="121.7" cy="181.4" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="121.7" cy="181.4" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0116 Mpc⁻¹ · Δ³ ≤ (1.76e+04 mK)³ · 2,898 triangles</title>
+<path d="M140.7 143.8V153.8M137.2 149.8L140.7 153.8L144.2 149.8" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="140.7" cy="138.8" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="140.7" cy="138.8" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0171 Mpc⁻¹ · Δ³ ≤ (2.96e+04 mK)³ · 23,964 triangles</title>
+<path d="M159.8 134.1V144.1M156.3 140.1L159.8 144.1L163.3 140.1" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="159.8" cy="129.1" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="159.8" cy="129.1" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0253 Mpc⁻¹ · Δ³ ≤ (5.52e+04 mK)³ · 65,634 triangles</title>
+<path d="M178.8 122.4V132.4M175.3 128.4L178.8 132.4L182.3 128.4" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="178.8" cy="117.4" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="178.8" cy="117.4" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0372 Mpc⁻¹ · Δ³ ≤ (9.68e+04 mK)³ · 182,854 triangles</title>
+<path d="M197.9 111.9V121.9M194.4 117.9L197.9 121.9L201.4 117.9" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="197.9" cy="106.9" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="197.9" cy="106.9" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0548 Mpc⁻¹ · Δ³ ≤ (1.51e+05 mK)³ · 2,588,688 triangles</title>
+<path d="M216.9 103.6V113.6M213.4 109.6L216.9 113.6L220.4 109.6" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="216.9" cy="98.6" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="216.9" cy="98.6" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.0807 Mpc⁻¹ · Δ³ ≤ (2.44e+05 mK)³ · 14,358,218 triangles</title>
+<path d="M236.0 94.6V104.6M232.5 100.6L236.0 104.6L239.5 100.6" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="236.0" cy="89.6" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="236.0" cy="89.6" r="12" fill="transparent"/></g>
+<g class="pt"><title>Equilateral · k₁ = 0.119 Mpc⁻¹ · Δ³ ≤ (2.2e+05 mK)³ · 9,785,432 triangles</title>
+<path d="M255.1 96.5V106.5M251.6 102.5L255.1 106.5L258.6 102.5" fill="none" stroke="#BF7F22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="255.1" cy="91.5" r="4.5" fill="#BF7F22" stroke="#10172A" stroke-width="2"/>
+<circle cx="255.1" cy="91.5" r="12" fill="transparent"/></g>
+<polyline points="140.7,179.2 159.8,136.7 178.8,121.1 197.9,107.1 216.9,92.6 236.0,82.0 255.1,84.2 274.1,78.2 293.2,90.2 312.2,84.0 331.3,80.5 350.3,72.7 369.4,56.6 388.5,63.3 407.5,41.7 426.6,30.5" fill="none" stroke="#3D8FD6" stroke-width="2" stroke-opacity=".6" stroke-linejoin="round"/>
+<g class="pt"><title>Squeezed · k₁ = 0.0116 Mpc⁻¹ · Δ³ ≤ (2.04e+03 mK)³ · 24,362 triangles</title>
+<path d="M140.7 184.2V194.2M137.2 190.2L140.7 194.2L144.2 190.2" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140.7 173.7L145.7 182.7L135.7 182.7Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="140.7" cy="179.2" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.0171 Mpc⁻¹ · Δ³ ≤ (1.97e+04 mK)³ · 30,640 triangles</title>
+<path d="M159.8 141.7V151.7M156.3 147.7L159.8 151.7L163.3 147.7" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M159.8 131.2L164.8 140.2L154.8 140.2Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="159.8" cy="136.7" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.0253 Mpc⁻¹ · Δ³ ≤ (4.55e+04 mK)³ · 200,344 triangles</title>
+<path d="M178.8 126.1V136.1M175.3 132.1L178.8 136.1L182.3 132.1" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M178.8 115.6L183.8 124.6L173.8 124.6Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="178.8" cy="121.1" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.0372 Mpc⁻¹ · Δ³ ≤ (9.55e+04 mK)³ · 795,743 triangles</title>
+<path d="M197.9 112.1V122.1M194.4 118.1L197.9 122.1L201.4 118.1" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M197.9 101.6L202.9 110.6L192.9 110.6Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="197.9" cy="107.1" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.0548 Mpc⁻¹ · Δ³ ≤ (2.08e+05 mK)³ · 8,964,264 triangles</title>
+<path d="M216.9 97.6V107.6M213.4 103.6L216.9 107.6L220.4 103.6" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M216.9 87.1L221.9 96.1L211.9 96.1Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="216.9" cy="92.6" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.0807 Mpc⁻¹ · Δ³ ≤ (3.65e+05 mK)³ · 44,901,076 triangles</title>
+<path d="M236.0 87.0V97.0M232.5 93.0L236.0 97.0L239.5 93.0" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.0 76.5L241.0 85.5L231.0 85.5Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="236.0" cy="82.0" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.119 Mpc⁻¹ · Δ³ ≤ (3.26e+05 mK)³ · 98,139,024 triangles</title>
+<path d="M255.1 89.2V99.2M251.6 95.2L255.1 99.2L258.6 95.2" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M255.1 78.7L260.1 87.7L250.1 87.7Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="255.1" cy="84.2" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.175 Mpc⁻¹ · Δ³ ≤ (4.49e+05 mK)³ · 312,970,542 triangles</title>
+<path d="M274.1 83.2V93.2M270.6 89.2L274.1 93.2L277.6 89.2" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M274.1 72.7L279.1 81.7L269.1 81.7Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="274.1" cy="78.2" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.258 Mpc⁻¹ · Δ³ ≤ (2.36e+05 mK)³ · 798,013,444 triangles</title>
+<path d="M293.2 95.2V105.2M289.7 101.2L293.2 105.2L296.7 101.2" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M293.2 84.7L298.2 93.7L288.2 93.7Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="293.2" cy="90.2" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.38 Mpc⁻¹ · Δ³ ≤ (3.28e+05 mK)³ · 1,773,487,484 triangles</title>
+<path d="M312.2 89.0V99.0M308.7 95.0L312.2 99.0L315.7 95.0" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M312.2 78.5L317.2 87.5L307.2 87.5Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="312.2" cy="84.0" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.56 Mpc⁻¹ · Δ³ ≤ (3.96e+05 mK)³ · 3,800,125,756 triangles</title>
+<path d="M331.3 85.5V95.5M327.8 91.5L331.3 95.5L334.8 91.5" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M331.3 75.0L336.3 84.0L326.3 84.0Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="331.3" cy="80.5" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 0.825 Mpc⁻¹ · Δ³ ≤ (6e+05 mK)³ · 8,070,960,142 triangles</title>
+<path d="M350.3 77.7V87.7M346.8 83.7L350.3 87.7L353.8 83.7" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350.3 67.2L355.3 76.2L345.3 76.2Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="350.3" cy="72.7" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 1.21 Mpc⁻¹ · Δ³ ≤ (1.42e+06 mK)³ · 17,729,710,004 triangles</title>
+<path d="M369.4 61.6V71.6M365.9 67.6L369.4 71.6L372.9 67.6" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M369.4 51.1L374.4 60.1L364.4 60.1Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="369.4" cy="56.6" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 1.79 Mpc⁻¹ · Δ³ ≤ (9.92e+05 mK)³ · 38,487,023,236 triangles</title>
+<path d="M388.5 68.3V78.3M385.0 74.3L388.5 78.3L392.0 74.3" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M388.5 57.8L393.5 66.8L383.5 66.8Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="388.5" cy="63.3" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 2.64 Mpc⁻¹ · Δ³ ≤ (3.14e+06 mK)³ · 83,042,307,022 triangles</title>
+<path d="M407.5 46.7V56.7M404.0 52.7L407.5 56.7L411.0 52.7" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M407.5 36.2L412.5 45.2L402.5 45.2Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="407.5" cy="41.7" r="12" fill="transparent"/></g>
+<g class="pt"><title>Squeezed · k₁ = 3.88 Mpc⁻¹ · Δ³ ≤ (5.72e+06 mK)³ · 178,777,690,530 triangles</title>
+<path d="M426.6 35.5V45.5M423.1 41.5L426.6 45.5L430.1 41.5" fill="none" stroke="#3D8FD6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M426.6 25.0L431.6 34.0L421.6 34.0Z" fill="#3D8FD6" stroke="#10172A" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="426.6" cy="30.5" r="12" fill="transparent"/></g>
+<text x="261.1" y="119.5" font-size="12.5" fill="#ECE7DC">Equilateral</text>
+<text x="436.6" y="34.5" font-size="12.5" fill="#ECE7DC">Squeezed</text>
+<text x="130.7" y="203.4" font-size="11.5" fill="#ECE7DC">Best: (1.81×10³ mK)³</text>
+<circle cx="86" cy="34" r="4.5" fill="#BF7F22"/><text x="98" y="38" font-size="12" fill="#ECE7DC">Equilateral triangles</text>
+<path d="M86 52.5L91 61.5L81 61.5Z" fill="#3D8FD6"/><text x="98" y="62" font-size="12" fill="#ECE7DC">Squeezed triangles</text>
+</svg>
+</div>
+<figcaption><span class="fig-kind">From the paper's data</span>2σ upper limits on Δ, the cube root of Δ<sup>3</sup>, at each triangle size. The dashed line marks the expected signal. Hover over a point to see its values; the numbers come from the <a href="https://github.com/sukhdeepsinghgill/EoR-21cm-Bispectrum">released data on GitHub</a>.</figcaption>
+</figure>
 </article>
-<article class="paper">
+
+<article class="paper has-fig" data-topic="21cm">
+<div class="text">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology</p>
 <h3><a href="https://doi.org/10.3847/1538-4357/ae160c">A Visibility-based 21 cm Bispectrum Estimator for Radio-interferometric Data</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Somnath Bharadwaj</p>
 <p class="venue">The Astrophysical Journal 995, 175 (2025)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> A fast, FFT-accelerated estimator that measures the multi-frequency angular bispectrum (MABS) and the 3D 21-cm bispectrum directly from gridded visibilities, for every triangle configuration. On simulated MWA observations (30.72 MHz of bandwidth centred on 154.25 MHz), it recovers the input bispectrum for <i>k</i><sub>1</sub> from about 0.003 to 1.26 Mpc<sup>−1</sup> to within 20%, even with the real data's flagged channels. The differences are consistent with statistical fluctuations.</p>
+<p><span class="lbl">Why it matters.</span> It makes the 21-cm bispectrum something that can actually be measured from interferometer data, and it is the measurement tool behind our MWA analysis at <i>z</i> = 8.2.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2506.10526">arXiv:2506.10526 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2934040">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#amber">Code: AMBER <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame light"><img src="images/papers/amber-fig4.png" width="1200" height="853" loading="lazy" alt="Three-panel comparison of the cylindrical 21-cm bispectrum: the analytical prediction, the estimate without flagging, and the estimate with flagging. Colour maps on top and line plots with error bars below show the estimates closely matching the prediction."></div>
+<figcaption><span class="fig-kind">Figure 4 of the paper</span>The cylindrical bispectrum predicted analytically (left) and recovered from simulated MWA visibilities without (middle) and with (right) the real data's flagged channels.</figcaption>
+</figure>
 </article>
-<article class="paper">
+
+<article class="paper has-fig" data-topic="21cm">
+<div class="text">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology</p>
 <h3><a href="https://doi.org/10.3847/1538-4357/ad9b20">A Visibility-based Angular Bispectrum Estimator for Radio-interferometric Data</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Somnath Bharadwaj, Sk. Saiyad Ali, Khandakar Md Asif Elahi</p>
 <p class="venue">The Astrophysical Journal 979, 25 (2025)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> An estimator for the angular bispectrum that works directly on gridded visibilities from a single frequency channel, using FFTs to include every triangle shape and size. On simulated MWA data at 154.25 MHz, it recovers the angular bispectrum to 10–15% accuracy across 46 ≤ ℓ ≤ 1320.</p>
+<p><span class="lbl">Why it matters.</span> Working with the visibilities that an interferometer actually records is the practical route to the bispectrum in radio data. This paper laid that groundwork, and AMBER then extended it across frequency.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2412.02246">arXiv:2412.02246 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2855491">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#viber">Code: ViBER <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/viber-baselines.svg" width="480" height="320" loading="lazy" alt="Schematic of the uv-plane with three baseline vectors U1, U2 and U3 placed head to tail to form a closed triangle, next to the product of the three visibilities that the estimator averages."></div>
+<figcaption><span class="fig-kind">Schematic</span>The estimator multiplies the visibilities at three baselines that close into a triangle, and averages over all such triangles.</figcaption>
+</figure>
 </article>
-<article class="paper">
+
+<article class="paper has-fig" data-topic="galaxy">
+<div class="text">
 <p class="tag"><span class="dot amber"></span>Galaxy surveys</p>
 <h3><a href="https://doi.org/10.1103/PhysRevD.111.043507">Brisk estimator for the angular multipoles of the redshift space bispectrum</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Somnath Bharadwaj</p>
 <p class="venue">Physical Review D 111, 043507 (2025)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> A fast estimator for all the angular multipoles of the redshift-space bispectrum, <span class="nw"><i>B</i><span class="ss"><span>m</span><span>ℓ</span></span></span>(<i>k</i><sub>1</sub>, <i>μ</i>, <i>t</i>), including the m ≠ 0 terms that are usually left out. On a grid of <i>N</i><sub>g</sub><sup>3</sup> cells, FFTs cut the cost from order <i>N</i><sub>g</sub><sup>6</sup> to <i>N</i><sub>g</sub><sup>4</sup>. On a test field with a known answer, it recovers all 16 non-zero multipoles up to ℓ = 6 and m = 6.</p>
+<p><span class="lbl">Why it matters.</span> The m ≠ 0 multipoles can add substantial information beyond the usual m = 0 terms. The estimator is ready for galaxy surveys such as DESI, Euclid and LSST, and for future 21-cm maps.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2405.14513">arXiv:2405.14513 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2789655">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#barbie">Code: BARBIE <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/barbie-multipoles.svg" width="480" height="320" loading="lazy" alt="Left: a triangle of wave vectors tilted relative to the line of sight. Right: the 16 non-zero multipoles arranged by l from 0 to 6 and m from 0 to l, with the m equals 0 column marked as the usual measurements and the rest as the terms this estimator adds."></div>
+<figcaption><span class="fig-kind">Schematic</span>How a triangle is tilted relative to the line of sight is captured by the multipoles. BARBIE measures all 16, not just the m = 0 column.</figcaption>
+</figure>
 </article>
+
 </div>
 </div>
 
 <div class="year-group reveal">
 <h2>2024</h2>
 <div class="papers">
-<article class="paper">
+<article class="paper has-fig" data-topic="galaxy">
+<div class="text">
 <p class="tag"><span class="dot amber"></span>Galaxy surveys</p>
 <h3><a href="https://doi.org/10.1016/j.newast.2024.102292">The size and shape dependence of the SDSS galaxy bispectrum</a></h3>
 <p class="authors">Anindita Nandi, <span class="me">Sukhdeep Singh Gill</span>, Debanjan Sarkar, Abinash Kumar Shaw, Biswajit Pandey, Somnath Bharadwaj</p>
 <p class="venue">New Astronomy 113, 102292 (2024)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> Measures the bispectrum of galaxies in the SDSS DR17 main galaxy sample across triangle sizes and shapes, using a volume-limited region around <i>z</i> ≈ 0.09, and compares it with mock catalogues built with different galaxy bias.</p>
+<p><span class="lbl">Why it matters.</span> On these scales the galaxy distribution is non-linear and strongly non-Gaussian, least for equilateral triangles and most for nearly linear ones. Mocks with a linear bias of about 1.2 match the data best, so a simple bias model works for this sample. This sets up parameter estimation with higher multipoles.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2401.15958">arXiv:2401.15958 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2752623">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/sdss-shapes.svg" width="480" height="320" loading="lazy" alt="The plane of triangle shapes shaded from pale at the equilateral corner to bright amber along the edge of nearly linear triangles, showing that non-Gaussianity grows toward linear triangles."></div>
+<figcaption><span class="fig-kind">Schematic</span>The main finding across triangle shapes: non-Gaussianity is weakest for equilateral triangles and grows toward nearly linear ones.</figcaption>
+</figure>
 </article>
 </div>
 </div>
@@ -127,12 +348,22 @@
 <div class="year-group reveal">
 <h2>2023</h2>
 <div class="papers">
-<article class="paper">
+<article class="paper has-fig" data-topic="21cm">
+<div class="text">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology</p>
 <h3><a href="https://doi.org/10.1093/mnras/stad3273">The monopole and quadrupole moments of the epoch of reionization (EoR) 21-cm bispectrum</a></h3>
 <p class="authors"><span class="me">Sukhdeep Singh Gill</span>, Suman Pramanick, Somnath Bharadwaj, Abinash Kumar Shaw, Suman Majumdar</p>
 <p class="venue">Monthly Notices of the Royal Astronomical Society 527, 1135–1140 (2023)</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> Uses simulations of reionization to follow the monopole and quadrupole of the 21-cm bispectrum for squeezed and stretched triangles, at <i>k</i> = 0.29 and 0.56 Mpc<sup>−1</sup>, as the Universe becomes ionized.</p>
+<p><span class="lbl">Why it matters.</span> The signs of the two moments trace the changing topology of reionization. The monopole turns negative once distinct ionized bubbles appear. Later both flip, as the picture inverts to neutral islands in an ionized Universe, and the negative quadrupole shows that those islands survive mainly in under-dense regions. The quadrupole adds information that the monopole alone cannot give.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2310.15579">arXiv:2310.15579 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/2714354">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/reionization-signs.svg" width="480" height="330" loading="lazy" alt="Three stages of reionization: early, with a few small ionized bubbles, where monopole and quadrupole are both positive; middle, with large bubbles, where the monopole is negative and the quadrupole positive; late, with neutral islands in an ionized background, where the monopole is positive and the quadrupole negative."></div>
+<figcaption><span class="fig-kind">Schematic</span>How the signs of the monopole and quadrupole change as reionization proceeds.</figcaption>
+</figure>
 </article>
 </div>
 </div>
@@ -140,12 +371,22 @@
 <div class="year-group reveal">
 <h2>2021</h2>
 <div class="papers">
-<article class="paper">
+<article class="paper has-fig" data-topic="theory">
+<div class="text">
 <p class="tag"><span class="dot"></span>Theory &amp; methods</p>
 <h3><a href="https://doi.org/10.1088/1475-7516/2021/12/024">A fast estimator for quantifying the shape dependence of the 3D bispectrum</a></h3>
 <p class="authors">Abinash Kumar Shaw, Somnath Bharadwaj, Debanjan Sarkar, Arindam Mazumdar, <span class="me">Sukhdeep Singh</span>, Suman Majumdar</p>
 <p class="venue">Journal of Cosmology and Astroparticle Physics 12 (2021) 024</p>
+<div class="summary">
+<p><span class="lbl">What it delivers.</span> A fast FFT-based estimator for the binned 3D bispectrum that separates a triangle's size (<i>k</i><sub>1</sub>) from its shape (<i>μ</i>, <i>t</i>), so the full shape dependence can be mapped. Its cost scales as <i>N</i><sub>g</sub><sup>3</sup> log <i>N</i><sub>g</sub><sup>3</sup>, close to a single FFT of the grid, and it agrees with analytical predictions to within 10% across much of the shape plane, including with linear redshift-space distortions.</p>
+<p><span class="lbl">Why it matters.</span> It made it practical to study the bispectrum as a function of triangle shape, and it became the starting point for the shape-dependent analyses that followed.</p>
+</div>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2107.14564">arXiv:2107.14564 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/1896738">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+<figure class="fig">
+<div class="fig-frame"><img src="images/papers/shape-plane.svg" width="480" height="320" loading="lazy" alt="The plane of triangle shapes with axes mu and t, both from 0.5 to 1. Equilateral triangles sit at the top-left corner, squeezed at the top-right, stretched at the bottom-right; a dashed line of right-angled triangles separates acute from obtuse shapes."></div>
+<figcaption><span class="fig-kind">Schematic</span>Every triangle shape is a point in the (<i>μ</i>, <i>t</i>) plane, so the bispectrum can be mapped shape by shape at each size <i>k</i><sub>1</sub>.</figcaption>
+</figure>
 </article>
 </div>
 </div>
@@ -153,7 +394,7 @@
 </div>
 </section>
 
-<section class="section" aria-labelledby="collab-h">
+<section class="section collab" aria-labelledby="collab-h">
 <div class="wrap reveal">
 <div class="section-head">
 <div class="stack" style="max-width: 62ch">
@@ -163,16 +404,18 @@
 </div>
 </div>
 <div class="papers stack" style="--gap: 8px">
-<article class="paper">
+<article class="paper" data-topic="21cm">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology · Preprint 2026</p>
 <h3><a href="https://arxiv.org/abs/2606.26072">Observations of the Cosmic Dawn and Epoch of Reionization with the SKAO: Observational Lessons Learned from Precursors and Pathfinder Instruments</a></h3>
 <p class="authors">Eloy de Lera Acedo, James Aguirre, et al., including <span class="me">Sukhdeep Singh Gill</span></p>
+<p class="summary-line muted">Gathers what precursor and pathfinder radio telescopes have taught the community about observing Cosmic Dawn and reionization, to guide observations with the SKA Observatory.</p>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2606.26072">arXiv:2606.26072 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/3172738">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
 </article>
-<article class="paper">
+<article class="paper" data-topic="21cm">
 <p class="tag"><span class="dot blue"></span>21-cm cosmology · Preprint 2026</p>
 <h3><a href="https://arxiv.org/abs/2606.26435">Overview of 21cm Experiments at High Redshift with SKAO</a></h3>
 <p class="authors">Gianni Bernardi, Daniela Breitman, et al., including <span class="me">Sukhdeep Singh Gill</span></p>
+<p class="summary-line muted">An overview of high-redshift 21-cm experiments with the SKA Observatory.</p>
 <div class="chips"><a class="chip" href="https://arxiv.org/abs/2606.26435">arXiv:2606.26435 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://inspirehep.net/literature/3173120">INSPIRE <span class="arrow ne" aria-hidden="true">↗</span></a></div>
 </article>
 </div>
@@ -199,6 +442,29 @@
     });
   }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
   els.forEach(function (e) { io.observe(e); });
+})();
+(function () {
+  var buttons = [].slice.call(document.querySelectorAll('[data-filter]'));
+  var papers = [].slice.call(document.querySelectorAll('article.paper[data-topic]'));
+  var groups = [].slice.call(document.querySelectorAll('.year-group'));
+  var status = document.getElementById('filter-status');
+  var names = { galaxy: 'galaxy surveys', '21cm': '21-cm cosmology', theory: 'theory and methods' };
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = b.getAttribute('data-filter');
+      buttons.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      var shown = 0;
+      papers.forEach(function (p) {
+        var on = f === 'all' || p.getAttribute('data-topic') === f;
+        p.hidden = !on; if (on) shown++;
+      });
+      groups.forEach(function (g) { g.hidden = !g.querySelector('article.paper:not([hidden])'); });
+      var collab = document.querySelector('.collab');
+      if (collab) collab.hidden = !collab.querySelector('article.paper:not([hidden])');
+      document.querySelectorAll('.reveal').forEach(function (e) { e.classList.add('in'); });
+      status.textContent = f === 'all' ? 'Showing all ' + shown + ' papers.' : 'Showing ' + shown + ' papers on ' + names[f] + '.';
+    });
+  });
 })();
 </script>
 </body>

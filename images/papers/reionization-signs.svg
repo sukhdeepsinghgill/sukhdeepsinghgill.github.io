@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 330" font-family="'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif">
+<title>Schematic: signs of the 21-cm bispectrum monopole and quadrupole at three stages of reionization</title>
+<defs><marker id="r1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#A9B2C6"/></marker></defs>
+<g font-size="13" fill="#ECE7DC" text-anchor="middle" font-weight="600">
+<text x="154" y="44">Early</text><text x="280" y="44">Middle</text><text x="406" y="44">Late</text>
+</g>
+<rect x="96" y="56" width="116" height="90" rx="6" fill="#8EC9F2" fill-opacity=".45" stroke="#3A4566"/>
+<g fill="#0A0F1C"><circle cx="118" cy="80" r="4"/><circle cx="170" cy="70" r="3"/><circle cx="150" cy="120" r="5"/><circle cx="196" cy="132" r="3"/><circle cx="128" cy="136" r="3"/></g>
+<rect x="222" y="56" width="116" height="90" rx="6" fill="#8EC9F2" fill-opacity=".45" stroke="#3A4566"/>
+<g fill="#0A0F1C"><circle cx="250" cy="85" r="16"/><circle cx="268" cy="98" r="12"/><circle cx="310" cy="78" r="14"/><circle cx="300" cy="128" r="17"/><circle cx="240" cy="130" r="10"/><circle cx="326" cy="110" r="8"/></g>
+<rect x="348" y="56" width="116" height="90" rx="6" fill="#0A0F1C" stroke="#3A4566"/>
+<g fill="#8EC9F2" fill-opacity=".55"><ellipse cx="376" cy="82" rx="10" ry="7"/><ellipse cx="430" cy="72" rx="8" ry="6"/><ellipse cx="410" cy="118" rx="12" ry="8"/><ellipse cx="368" cy="130" rx="6" ry="5"/><ellipse cx="448" cy="130" rx="7" ry="5"/></g>
+<g font-size="12" fill="#A9B2C6" text-anchor="middle">
+<text x="154" y="166">x̄<tspan font-size="9" dy="3">HI</tspan><tspan dy="-3"> ≈ 0.99</tspan></text>
+<text x="280" y="166">x̄<tspan font-size="9" dy="3">HI</tspan><tspan dy="-3"> &gt; 0.5</tspan></text>
+<text x="406" y="166">x̄<tspan font-size="9" dy="3">HI</tspan><tspan dy="-3"> &lt; 0.5</tspan></text>
+</g>
+<g font-size="12.5" fill="#ECE7DC" text-anchor="end"><text x="86" y="204">Monopole</text><text x="86" y="246">Quadrupole</text></g>
+<g stroke-width="1.5">
+<circle cx="154" cy="200" r="14" fill="none" stroke="#ECE7DC"/><circle cx="280" cy="200" r="14" fill="#F2B766" stroke="#F2B766"/><circle cx="406" cy="200" r="14" fill="none" stroke="#ECE7DC"/>
+<circle cx="154" cy="242" r="14" fill="none" stroke="#ECE7DC"/><circle cx="280" cy="242" r="14" fill="none" stroke="#ECE7DC"/><circle cx="406" cy="242" r="14" fill="#F2B766" stroke="#F2B766"/>
+</g>
+<g font-size="20" text-anchor="middle" font-weight="600">
+<text x="154" y="207" fill="#ECE7DC">+</text><text x="280" y="207" fill="#0A0F1C">−</text><text x="406" y="207" fill="#ECE7DC">+</text>
+<text x="154" y="249" fill="#ECE7DC">+</text><text x="280" y="249" fill="#ECE7DC">+</text><text x="406" y="249" fill="#0A0F1C">−</text>
+</g>
+<path d="M96 276H458" stroke="#A9B2C6" stroke-width="1.4" marker-end="url(#r1)"/>
+<text x="280" y="296" font-size="12" fill="#A9B2C6" text-anchor="middle">Reionization proceeds: the neutral fraction falls</text>
+<rect x="96" y="310" width="11" height="11" rx="2" fill="#8EC9F2" fill-opacity=".55"/><text x="113" y="320" font-size="11.5" fill="#A9B2C6">neutral hydrogen</text>
+<rect x="232" y="310" width="11" height="11" rx="2" fill="#0A0F1C" stroke="#3A4566"/><text x="249" y="320" font-size="11.5" fill="#A9B2C6">ionized</text>
+<text x="466" y="320" font-size="10" fill="#6E7891" text-anchor="end">Schematic</text>
+</svg>
