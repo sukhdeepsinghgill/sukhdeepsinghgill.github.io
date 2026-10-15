@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research · Sukhdeep Singh Gill</title>
+<meta name="description" content="Research on the bispectrum and higher-order statistics of galaxies and the 21-cm signal, from estimators to MWA observations.">
+<meta name="author" content="Sukhdeep Singh Gill">
+<meta name="theme-color" content="#0A0F1C">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research · Sukhdeep Singh Gill">
+<meta property="og:description" content="Research on the bispectrum and higher-order statistics of galaxies and the 21-cm signal, from estimators to MWA observations.">
+<meta property="og:url" content="https://sukhdeepsinghgill.github.io/research.html">
+<link rel="canonical" href="https://sukhdeepsinghgill.github.io/research.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=STIX+Two+Text:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><span class="brand-name">Sukhdeep Singh Gill</span><span class="brand-tag">Cosmology</span></a>
+<nav class="nav" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="research.html" aria-current="page">Research</a>
+<a href="publications.html">Publications</a>
+<a href="code.html">Code</a>
+<a href="reports.html">Reports</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-intro">
+<div class="wrap">
+<p class="eyebrow rise">Research</p>
+<h1 class="display rise d1">Beyond the power spectrum</h1>
+<p class="lead rise d2">The cosmic web holds far more information than its simplest statistics reveal. I build the tools to read that extra information, from galaxy surveys and from radio maps of neutral hydrogen.</p>
+<nav class="chips rise d3" aria-label="On this page">
+<a class="chip" href="#idea">The idea</a>
+<a class="chip" href="#built">What we have built</a>
+<a class="chip" href="#now">Current work</a>
+<a class="chip" href="#window">The 21-cm window</a>
+<a class="chip" href="#tour">Visual tour</a>
+</nav>
+</div>
+</section>
+
+<section id="idea" class="section" aria-labelledby="idea-h">
+<div class="wrap split reveal">
+<div class="main prose">
+<p class="eyebrow">The idea</p>
+<h2 id="idea-h" class="h2">Why look beyond two points?</h2>
+<p>For decades, two-point statistics such as the power spectrum have been the cornerstone of large-scale structure studies. The power spectrum measures how strongly matter clusters on each length scale. For a Gaussian field, that is the whole story.</p>
+<p>The Universe we observe is not Gaussian. Gravity draws matter into filaments, sheets and clusters, and this non-linear growth leaves imprints that the power spectrum cannot see. Higher-order statistics capture that missing information, so we can learn more from the same galaxy surveys and 21-cm observations.</p>
+<p>The bispectrum is the next statistic after the power spectrum, and the first that responds to non-Gaussian features. It matters at both ends of cosmic history. At late times, it traces the non-linearity built up by gravitational instability. In the very early Universe, it constrains primordial non-Gaussianity, which opens a window onto the physics of inflation.</p>
+</div>
+<aside class="side panel" style="flex-basis: 440px" aria-label="Power spectrum and bispectrum">
+<p class="eyebrow" style="color: var(--dim)">Two points and three</p>
+<div class="stack" style="--gap: 6px">
+<div class="eq"><p><span class="nw">⟨<i>δ</i>(<b>k</b><sub>1</sub>) <i>δ</i>(<b>k</b><sub>2</sub>)⟩</span> <span class="nw">= (2π)<sup>3</sup> <i>δ</i><sub>D</sub>(<b>k</b><sub>1</sub> + <b>k</b><sub>2</sub>) <i>P</i>(<i>k</i><sub>1</sub>)</span></p></div>
+<p class="note">The power spectrum <span class="math"><i>P</i></span> correlates pairs of Fourier modes.</p>
+</div>
+<div class="stack" style="--gap: 6px">
+<div class="eq"><p><span class="nw">⟨<i>δ</i>(<b>k</b><sub>1</sub>) <i>δ</i>(<b>k</b><sub>2</sub>) <i>δ</i>(<b>k</b><sub>3</sub>)⟩</span> <span class="nw">= (2π)<sup>3</sup> <i>δ</i><sub>D</sub>(<b>k</b><sub>1</sub> + <b>k</b><sub>2</sub> + <b>k</b><sub>3</sub>)</span> <span class="nw"><i>B</i>(<b>k</b><sub>1</sub>, <b>k</b><sub>2</sub>, <b>k</b><sub>3</sub>)</span></p></div>
+<p class="note">The bispectrum <span class="math"><i>B</i></span> correlates three modes whose wave vectors close into a triangle.</p>
+</div>
+<svg viewBox="0 0 260 170" role="img" aria-label="Three wave vectors k1, k2 and k3 placed head to tail, forming a closed triangle.">
+<defs>
+<marker id="ah-star" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ECE7DC"/></marker>
+<marker id="ah-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#F2B766"/></marker>
+<marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8EC9F2"/></marker>
+</defs>
+<path d="M40 140L214 140" fill="none" stroke="#ECE7DC" stroke-width="1.6" marker-end="url(#ah-star)"/>
+<path d="M220 140L153 42" fill="none" stroke="#F2B766" stroke-width="1.6" marker-end="url(#ah-amber)"/>
+<path d="M150 36L44 135" fill="none" stroke="#8EC9F2" stroke-width="1.6" marker-end="url(#ah-blue)"/>
+<text x="130" y="162" text-anchor="middle" fill="#ECE7DC" font-family="'STIX Two Text', Cambria, serif" font-size="17"><tspan font-weight="700">k</tspan><tspan font-size="12" dy="4">1</tspan></text>
+<text x="204" y="84" fill="#F2B766" font-family="'STIX Two Text', Cambria, serif" font-size="17"><tspan font-weight="700">k</tspan><tspan font-size="12" dy="4">2</tspan></text>
+<text x="80" y="80" text-anchor="end" fill="#8EC9F2" font-family="'STIX Two Text', Cambria, serif" font-size="17"><tspan font-weight="700">k</tspan><tspan font-size="12" dy="4">3</tspan></text>
+</svg>
+<p class="note ruled">For a Gaussian field the bispectrum is zero. Gravity makes it grow, and the way it depends on the size and shape of the triangle carries information the power spectrum misses.</p>
+</aside>
+</div>
+</section>
+
+<section id="built" class="section" aria-labelledby="built-h">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="stack" style="max-width: 66ch">
+<p class="eyebrow">Contributions</p>
+<h2 id="built-h" class="h2">What we have built</h2>
+<p class="muted">Most of this work began during my PhD at IIT Kharagpur. It runs from the first estimators to the first measurements on real radio data, listed from earliest to most recent.</p>
+</div>
+</div>
+<ol class="rows">
+<li class="contrib reveal">
+<span class="yr">2021</span>
+<div class="body">
+<h3 class="h3-sans">Measuring triangle shapes, fast</h3>
+<p>We developed a fast estimator that quantifies how the 3D bispectrum depends on the shape of triangles.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.1088/1475-7516/2021/12/024">JCAP 12 (2021) 024 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2023</span>
+<div class="body">
+<h3 class="h3-sans">Forecasting the reionization bispectrum</h3>
+<p>Using simulated signals, we forecast the monopole and quadrupole moments of the 21-cm bispectrum from the Epoch of Reionization. The results show that the bispectrum can be a powerful diagnostic of how reionization began and how it ended.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.1093/mnras/stad3273">MNRAS 527 (2023) 1135 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2024</span>
+<div class="body">
+<h3 class="h3-sans">The bispectrum of SDSS galaxies</h3>
+<p>We measured how the bispectrum monopole of SDSS galaxies depends on the size and shape of triangles. Next, we plan to extend this analysis to higher-order multipoles.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.1016/j.newast.2024.102292">New Astronomy 113 (2024) 102292 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2025</span>
+<div class="body">
+<h3 class="h3-sans">Every multipole in redshift space</h3>
+<p>Our Brisk estimator computes all non-zero angular multipoles of the anisotropic redshift-space bispectrum. It applies directly to ongoing and upcoming galaxy surveys such as DESI, Euclid and LSST.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.1103/PhysRevD.111.043507">Phys. Rev. D 111 (2025) 043507 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#barbie">Code: BARBIE <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2025</span>
+<div class="body">
+<h3 class="h3-sans">Angular bispectra straight from radio data</h3>
+<p>We built a visibility-based estimator for the 21-cm angular bispectrum. It works directly on gridded data from a single frequency channel of radio interferometers such as the uGMRT, MWA and SKA.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.3847/1538-4357/ad9b20">ApJ 979 (2025) 25 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#viber">Code: ViBER <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2025</span>
+<div class="body">
+<h3 class="h3-sans">Adding frequency: the full 21-cm bispectrum</h3>
+<p>We extended this to many frequencies at once, with a fast, FFT-accelerated estimator for the multi-frequency angular bispectrum (MABS) and the 3D 21-cm bispectrum. On simulated MWA observations, it recovers the input signal to within about 20%, mostly consistent with statistical noise.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.3847/1538-4357/ae160c">ApJ 995 (2025) 175 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#amber">Code: AMBER <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2025</span>
+<div class="body">
+<h3 class="h3-sans">Testing gravity with the bispectrum</h3>
+<p>I laid the theoretical foundations for using the bispectrum multipoles of galaxies and other cosmological tracers to test theories of gravity beyond general relativity.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.1017/pasa.2025.10078">PASA 42 (2025) e116 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</div>
+</li>
+<li class="contrib reveal">
+<span class="yr">2026</span>
+<div class="body">
+<h3 class="h3-sans">A first look at reionization in MWA data</h3>
+<p>We applied these estimators to MWA observations at <span class="math"><i>z</i></span> = 8.2. The first paper studies the foregrounds and sets preliminary upper limits on the 21-cm bispectrum from reionization. The second refines the analysis by filtering out the smooth component of the data.</p>
+<div class="chips"><a class="chip" href="https://doi.org/10.3847/1538-4357/ae0463">ApJ 993 (2025) 56 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://doi.org/10.3847/1538-4357/ae66f4">ApJ 1003 (2026) 189 <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="code.html#data">Data <span class="arrow" aria-hidden="true">→</span></a></div>
+</div>
+</li>
+</ol>
+</div>
+</section>
+
+<section id="now" class="section" aria-labelledby="now-h">
+<div class="wrap reveal">
+<div class="section-head">
+<div class="stack">
+<p class="eyebrow">Current work</p>
+<h2 id="now-h" class="h2">Two directions</h2>
+</div>
+</div>
+<div class="grid" style="--min: 420px">
+<article class="card plain">
+<p class="tag amber">Late-time Universe</p>
+<h3 class="h3">Galaxies as a 3D map</h3>
+<p class="muted">Galaxy surveys give us an information-rich, three-dimensional map of the Universe. I build tools that extract as much of that information as possible, including on small, non-linear scales, to understand how the Universe has evolved at late times.</p>
+</article>
+<article class="card plain">
+<p class="tag blue">Epoch of Reionization</p>
+<h3 class="h3">Hydrogen and the first light</h3>
+<p class="muted">The 21-cm line of neutral hydrogen lets us study the Epoch of Reionization. We map the sky at radio frequencies with interferometers and extract the information carried by 21-cm fluctuations. I am currently using 21-cm forest data to constrain models of reionization.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="window" class="section" aria-labelledby="window-h">
+<div class="wrap reveal">
+<div class="split" style="align-items: center">
+<div class="main prose">
+<p class="eyebrow">The 21-cm window</p>
+<h2 id="window-h" class="h2">Looking back with neutral hydrogen</h2>
+<p>Neutral hydrogen emits a faint spectral line at a rest frequency of 1420 MHz, a wavelength of 21 cm. As the Universe expands, the line is redshifted, so each frequency we observe corresponds to a different cosmic epoch. Tuning a radio telescope to lower frequencies means looking further back in time.</p>
+</div>
+<div class="side panel" style="align-self: center; gap: 10px">
+<div class="eq big"><p><i>ν</i><sub>obs</sub> = <span class="frac"><span>1420 MHz</span><span>1 + <i>z</i></span></span></p></div>
+<p class="note">For example, a signal emitted at redshift <span class="math"><i>z</i></span> = 9 reaches us at 142 MHz.</p>
+</div>
+</div>
+<ol class="cosmic-timeline" aria-label="Cosmic timeline, from earliest to today">
+<li><span class="pt"></span><span class="when">Start</span><span class="what">Big Bang</span><span class="why">A hot, dense beginning.</span></li>
+<li><span class="pt"></span><span class="when math"><i>z</i> ≈ 1100</span><span class="what">Microwave background</span><span class="why">Hydrogen turns neutral and light streams free.</span></li>
+<li><span class="pt blue"></span><span class="when">After recombination</span><span class="what">Dark Ages</span><span class="why">No stars yet; neutral hydrogen fills space.</span></li>
+<li><span class="pt blue"></span><span class="when">First light</span><span class="what">Cosmic Dawn</span><span class="why">The first stars and galaxies switch on.</span></li>
+<li><span class="pt amber"></span><span class="when math"><i>z</i> ≈ 13–7</span><span class="what">Reionization</span><span class="why">Their light ionizes the gas between galaxies.</span></li>
+<li><span class="pt amber"></span><span class="when math"><i>z</i> = 0</span><span class="what">Today</span><span class="why">The galaxies and cosmic web we observe now.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="tour" class="section" aria-labelledby="tour-h">
+<div class="wrap reveal">
+<div class="section-head">
+<div class="stack">
+<p class="eyebrow">Visual tour</p>
+<h2 id="tour-h" class="h2">Pictures from the field</h2>
+</div>
+</div>
+<div class="grid fill gallery">
+<figure>
+<div class="frame"><img src="images/universe-evolution.jpg" alt="Artist's timeline of the Universe from the Big Bang to present-day galaxies." onerror="this.closest('figure').remove()"></div>
+<figcaption><strong>The history of the Universe.</strong> From the Big Bang to the galaxies we see today. Image: ESO.</figcaption>
+</figure>
+<figure>
+<div class="frame"><img src="images/cosmic-web.jpg" alt="Wedge-shaped map of galaxies from a redshift survey, showing filaments and voids." onerror="this.closest('figure').remove()"></div>
+<figcaption><strong>The cosmic web.</strong> Each point is a galaxy mapped by a redshift survey. The way galaxies cluster encodes a great deal of physics. Image: 2dFGRS.</figcaption>
+</figure>
+<figure>
+<div class="frame"><img src="images/mwa.jpg" alt="Antenna tiles of the Murchison Widefield Array in the Western Australian outback." onerror="this.closest('figure').remove()"></div>
+<figcaption><strong>The Murchison Widefield Array.</strong> A radio telescope in Western Australia, built to detect the redshifted 21-cm signal from neutral hydrogen.</figcaption>
+</figure>
+<figure>
+<div class="frame"><img src="images/reionization.jpg" alt="Simulated map of ionized bubbles growing in neutral hydrogen during reionization." onerror="this.closest('figure').remove()"></div>
+<figcaption><strong>Reionization, simulated.</strong> Between redshifts of about 13 and 7, high-energy photons from the first stars, galaxies and quasars ionized the hydrogen between galaxies. It was the last major phase transition of the Universe.</figcaption>
+</figure>
+<figure>
+<div class="frame">
+<svg viewBox="0 0 480 360" role="img" aria-label="Diagram of redshift-space distortions: a circle in real space appears squashed along the line of sight on large scales and stretched along it on small scales.">
+<defs><marker id="ah-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#A9B2C6"/></marker></defs>
+<path d="M34 250L34 80" fill="none" stroke="#A9B2C6" stroke-width="1.4" marker-end="url(#ah-dim)"/>
+<text x="22" y="165" text-anchor="middle" transform="rotate(-90 22 165)" fill="#A9B2C6" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13">line of sight</text>
+<circle cx="120" cy="165" r="48" fill="none" stroke="#ECE7DC" stroke-width="1.8"/>
+<circle cx="260" cy="165" r="48" fill="none" stroke="#A9B2C6" stroke-opacity=".45" stroke-width="1" stroke-dasharray="4 4"/>
+<ellipse cx="260" cy="165" rx="58" ry="30" fill="none" stroke="#F2B766" stroke-width="1.8"/>
+<path d="M260 100L260 128" fill="none" stroke="#A9B2C6" stroke-width="1.4" marker-end="url(#ah-dim)"/>
+<path d="M260 230L260 202" fill="none" stroke="#A9B2C6" stroke-width="1.4" marker-end="url(#ah-dim)"/>
+<circle cx="400" cy="165" r="48" fill="none" stroke="#A9B2C6" stroke-opacity=".45" stroke-width="1" stroke-dasharray="4 4"/>
+<ellipse cx="400" cy="165" rx="20" ry="74" fill="none" stroke="#8EC9F2" stroke-width="1.8"/>
+<text x="120" y="292" text-anchor="middle" fill="#ECE7DC" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="15" font-weight="600">Real space</text>
+<text x="120" y="314" text-anchor="middle" fill="#A9B2C6" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13">no distortion</text>
+<text x="260" y="292" text-anchor="middle" fill="#ECE7DC" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="15" font-weight="600">Large scales</text>
+<text x="260" y="314" text-anchor="middle" fill="#A9B2C6" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13">squashed by infall</text>
+<text x="400" y="292" text-anchor="middle" fill="#ECE7DC" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="15" font-weight="600">Small scales</text>
+<text x="400" y="314" text-anchor="middle" fill="#A9B2C6" font-family="'IBM Plex Sans', system-ui, sans-serif" font-size="13">fingers of God</text>
+</svg>
+</div>
+<figcaption><strong>Redshift-space distortions.</strong> The motions of galaxies shift their apparent distances, so structures look squashed or stretched along the line of sight. This picks out one direction in an otherwise isotropic Universe and makes the power spectrum and bispectrum anisotropic.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>© Sukhdeep Singh Gill. All rights reserved.</p>
+<p class="inline-links"><a href="https://scholar.google.com/citations?user=yd1vCpYAAAAJ&amp;hl=en">Google Scholar</a><a href="https://inspirehep.net/authors/2758668">INSPIRE-HEP</a><a href="https://github.com/sukhdeepsinghgill">GitHub</a><a href="contact.html">Contact</a></p>
+</div>
+</footer>
+<script>
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || still) {
+    els.forEach(function (e) { e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+  els.forEach(function (e) { io.observe(e); });
+})();
+</script>
+</body>
+</html>

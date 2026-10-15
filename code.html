@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Code · Sukhdeep Singh Gill</title>
+<meta name="description" content="Open-source bispectrum estimators for galaxy surveys and radio-interferometric data: BARBIE, ViBER and AMBER.">
+<meta name="author" content="Sukhdeep Singh Gill">
+<meta name="theme-color" content="#0A0F1C">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Code · Sukhdeep Singh Gill">
+<meta property="og:description" content="Open-source bispectrum estimators for galaxy surveys and radio-interferometric data: BARBIE, ViBER and AMBER.">
+<meta property="og:url" content="https://sukhdeepsinghgill.github.io/code.html">
+<link rel="canonical" href="https://sukhdeepsinghgill.github.io/code.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=STIX+Two+Text:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html"><span class="brand-name">Sukhdeep Singh Gill</span><span class="brand-tag">Cosmology</span></a>
+<nav class="nav" aria-label="Main">
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="code.html" aria-current="page">Code</a>
+<a href="reports.html">Reports</a>
+<a href="resources.html">Resources</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-intro">
+<div class="wrap">
+<p class="eyebrow rise">Code &amp; data</p>
+<h1 class="display rise d1">Open-source estimators</h1>
+<p class="intro-text rise d2">The estimators behind my papers are public on GitHub under the MIT license. Each one turns a different kind of cosmological data into bispectrum measurements: galaxy fields for BARBIE, and radio-interferometer visibilities for ViBER and AMBER.</p>
+<div class="actions rise d3">
+<a class="btn btn-solid" href="https://github.com/sukhdeepsinghgill">All repositories on GitHub <span class="arrow ne" aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+
+<section aria-label="Repositories">
+<div class="wrap" style="padding-bottom: 72px">
+<div class="grid reveal" style="--min: 460px">
+
+<article id="barbie" class="card repo">
+<p class="tag amber"><span class="dot amber"></span>Galaxy surveys</p>
+<h2 class="name">BARBIE</h2>
+<p class="full">Brisk estimator for Angular multipoles of Redshift-space BIspEctrum</p>
+<p class="muted grow">Takes a 3D cube of the galaxy density field and computes all the multipole moments of the redshift-space bispectrum, with redshift-space distortions taken along the z-axis.</p>
+<dl class="io">
+<dt>Input</dt><dd>3D galaxy field cube</dd>
+<dt>Output</dt><dd>Redshift-space bispectrum multipoles</dd>
+</dl>
+<div class="chips"><a class="chip" href="https://github.com/sukhdeepsinghgill/BARBIE">GitHub <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://doi.org/10.1103/PhysRevD.111.043507">Paper: Phys. Rev. D 111, 043507 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</article>
+
+<article id="viber" class="card repo">
+<p class="tag blue"><span class="dot blue"></span>21-cm cosmology</p>
+<h2 class="name">ViBER</h2>
+<p class="full">Visibility-based angular Bispectrum Estimator for Radio-interferometric data</p>
+<p class="muted grow">Works on gridded visibilities from a single frequency channel and computes the angular bispectrum by correlating every triplet of baselines that closes into a triangle.</p>
+<dl class="io">
+<dt>Input</dt><dd>Single-frequency gridded visibilities</dd>
+<dt>Output</dt><dd>Angular bispectrum</dd>
+</dl>
+<div class="chips"><a class="chip" href="https://github.com/sukhdeepsinghgill/ViBER">GitHub <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://doi.org/10.3847/1538-4357/ad9b20">Paper: ApJ 979, 25 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</article>
+
+<article id="amber" class="card repo">
+<p class="tag blue"><span class="dot blue"></span>21-cm cosmology</p>
+<h2 class="name">AMBER</h2>
+<p class="full">Accelerated multi-frequency angular and 3D bispectrum estimator</p>
+<p class="muted grow">Extends the visibility-based approach across frequency. From gridded multi-frequency visibilities, it computes three-visibility correlations for every closed triangle of baselines, giving the multi-frequency angular bispectrum (MABS) and the 3D bispectrum.</p>
+<dl class="io">
+<dt>Input</dt><dd>Multi-frequency gridded visibilities</dd>
+<dt>Output</dt><dd>MABS and 3D bispectrum</dd>
+</dl>
+<div class="chips"><a class="chip" href="https://github.com/sukhdeepsinghgill/AMBER">GitHub <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="https://doi.org/10.3847/1538-4357/ae160c">Paper: ApJ 995, 175 <span class="arrow ne" aria-hidden="true">↗</span></a></div>
+</article>
+
+<article id="data" class="card repo">
+<p class="tag blue"><span class="dot blue"></span>Data release</p>
+<h2 class="name">EoR-21cm-Bispectrum</h2>
+<p class="full">MWA observations at <span class="math"><i>z</i></span> = 8.2</p>
+<p class="muted grow">Data products from our measurement of the Epoch of Reionization 21-cm bispectrum with Murchison Widefield Array observations at redshift 8.2.</p>
+<dl class="io">
+<dt>Contents</dt><dd>Validation and preliminary results</dd>
+<dt>Papers</dt><dd>ApJ 993, 56 and ApJ 1003, 189</dd>
+</dl>
+<div class="chips"><a class="chip" href="https://github.com/sukhdeepsinghgill/EoR-21cm-Bispectrum">GitHub <span class="arrow ne" aria-hidden="true">↗</span></a><a class="chip" href="publications.html">Papers <span class="arrow" aria-hidden="true">→</span></a></div>
+</article>
+
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>© Sukhdeep Singh Gill. All rights reserved.</p>
+<p class="inline-links"><a href="https://scholar.google.com/citations?user=yd1vCpYAAAAJ&amp;hl=en">Google Scholar</a><a href="https://inspirehep.net/authors/2758668">INSPIRE-HEP</a><a href="https://github.com/sukhdeepsinghgill">GitHub</a><a href="contact.html">Contact</a></p>
+</div>
+</footer>
+<script>
+(function () {
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || still) {
+    els.forEach(function (e) { e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+  els.forEach(function (e) { io.observe(e); });
+})();
+</script>
+</body>
+</html>
