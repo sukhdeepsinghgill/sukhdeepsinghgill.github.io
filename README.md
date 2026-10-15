@@ -2,7 +2,6 @@
 
 Personal research website, served by GitHub Pages at **https://sukhdeepsinghgill.github.io**.
 
-It is plain HTML and CSS: no build step and no framework. Edit a page, commit, and GitHub Pages republishes it within a minute or two.
 
 ## Pages
 
